@@ -1,0 +1,19 @@
+{
+  "name": "sus-app",
+  "version": "1.0.0",
+  "description": "very sussy app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-packager ."
+  },
+  "author": "SoftyDuck",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^18.1.0"
+  },
+  "dependencies": {
+    "electron-packager": "^15.5.1"
+  }
+}

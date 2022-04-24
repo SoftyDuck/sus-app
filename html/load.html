@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Sus App</title>
+</head>
+<body>
+    <div id='splash'>
+        <img alt='icon' class='logo' src='../Images/icon.ico'/>
+        <p style="line-height: 50px; color: white;">Loading sus app..</p>
+        </div>
+        <style>
+        #splash {
+            position:absolute;
+            top: 0;
+            left: 0;
+            background: black !important;
+            height: 100vh;
+            width: 100%;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 1;
+            transition: opacity 1s;
+        }
+        
+        #splash img {
+            width: 300px;
+        }
+        
+        #splash.fade {
+            opacity: 0;
+        }
+        </style>
+<script>setTimeout(function(){
+    window.location.replace("main.html");
+} , 3000); </script>
+</body>
+</html>

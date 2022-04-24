@@ -6,4 +6,4 @@ The Sus App has a brand new Among us Knockoff game
 
 # V1.0.1 Chnage Log
 - Added a among us game
-- changed the ui
+- changed the UI

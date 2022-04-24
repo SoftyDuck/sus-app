@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
-    "build": "electron-packager ."
+    "build": "electron-packager ." ,
+    "dist": "electron-builder"
   },
   "author": "SoftyDuck",
   "license": "ISC",
@@ -14,6 +15,22 @@
     "electron": "^18.1.0"
   },
   "dependencies": {
-    "electron-packager": "^15.5.1"
-  }
+    "electron-packager": "^15.5.1" 
+  },
+  "build": {
+    "appId": "sus-app",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "Images/icon.ico"
+    },
+    "nsis": {
+      "installerIcon": "Images/icon.ico",
+      "uninstallerIcon": "Images/icon.ico",
+      "uninstallDisplayName": "Su App",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
 }
+ }
